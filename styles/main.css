@@ -1,0 +1,123 @@
+body {
+    background-color: whitesmoke;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    margin-left: 15px;
+    margin-right: 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+header p {
+    border-top: 2px solid black;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.navbar {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #222121;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar button {
+    border: none;
+    cursor: pointer;
+    background-color: #222121;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 8px;
+    padding: 10px;
+}
+
+.navbar button:hover, .navbar button:focus {
+    z-index: 2;
+    background-color: #0f0f0f;
+    box-shadow: 2px 2px 1px 1px #0f0f0f;
+}
+
+.navbar button:active {
+    background-color: #0c0c0c;
+    box-shadow: #0f0f0f
+}
+
+.navbar .dropdown-container {
+    position: relative;
+}
+
+.navbar .link-dropdown {
+    background-color: #404041;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    margin-top: 5px;
+}
+
+.link-dropdown a {
+    text-decoration: none;
+    background-color: #5c5c5c;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.link-dropdown a:hover {
+    background-color: #424242;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .content {
+    background-color: white;
+    width: 85%;
+    min-height: 500px;
+    padding: 25px;
+    margin: 20px;
+    z-index: 2;
+    box-shadow: 4px 4px 3px 3px #7776769c;
+    border-radius: 2px;
+
+
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    border-radius: 50%;
+    box-shadow: 4px 4px 3px 3px #7776769c;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Webavis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="" href="images/logo.png">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/sakar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/heim.css">
+
+    <script src="scripts/dropdown.js"></script>
+</head>
+<body>
+    <header>
+        <h1><img src="images/hfk.png" alt="Logo av HFK fylkeskommune" width="65px" height="65px"> Voss Gymnas Avisa</h1>
+        <p>Made by: Jonas og Alex - Ringheimane</p>
+        
+    </header>
+    <div class="navbar">
+        <a href=""><button>Heim</button></a>
+        <div class="dropdown-container">
+            <button id="btn-nyheiter" onclick="toggleDropdown('link-nyheiter');">Nyheiter</button>
+            <div class="link-dropdown" id="link-nyheiter">
+                <a href="pages/gamlebygget.html">Gamlebygget</a>
+                <a href="pages/skulefrokost.html">Skulefrokost</a>
+    
+            </div>
+        </div>
+        <div class="dropdown-container">
+            <button id="btn-kunst" onclick="toggleDropdown('link-kunst');">Kunst</button>
+            <div class="link-dropdown" id="link-kunst">
+                <a href="">KDA</a>
+                <a href="">Veggmåleri</a>
+            </div>
+        </div>
+        <div class="dropdown-container">
+            <button id="btn-sport" onclick="toggleDropdown('link-sport');">Sport</button>
+            <div class="link-dropdown" id="link-sport">
+                <a href="">Toppidrett</a>
+                <a href="">Ski</a>
+            </div>
+        </div>
+        <div class="dropdown-container">
+            <button id="btn-vitenskap" onclick="toggleDropdown('link-vitenskap');">Vitenskap</button>
+            <div class="link-dropdown" id="link-vitenskap">
+                <a href="">Fysikk</a>
+                <a href="">Kjemi</a>
+            </div>
+        </div>
+    </div>
+    <main>
+
+        <div class="content">
+            <article id="overskrift">Voss Gymnas</article>
+            <article id="beskrivelse">
+                <p>Voss gymnas opna offisielt 1. august 2017. Då var skulesamanslåinga på Voss fullført og fem skular (Voss gymnas, Voss
+                husflidskule, Rogne vidaregåande skule, Voss vidaregåande skule og Voss jordbruksskule) hadde blitt til to nye: Voss
+                gymnas og Voss vidaregåande skule. I løpet av prosessen med skulesamanslåinga vart det òg avgjort å leggje ned Hjeltnes
+                vidaregåande skule og flytte deira tilbod til Voss-skulane.</p>
+                
+                <p>Voss gymnas har omlag 600 elevar fordelt på sju utdanningsprogram, både studieførebuande og yrkesretta. Innan for
+                utdanningsprogrammet for idrettsfag har skulen ei toppidrettssatsing innan skiidrettane, i samarbeid med Olympiatoppen
+                Vest. Vidare tilbyr skulen vaksenopplæring og innføringsklasse for minoritetsspråklege elevar. Om lag 120 tilsette
+                arbeider til dagleg ved Voss gymnas.</p>
+                
+                <p>I skuleåret 2017/18 vert det gamle jugendbygget frå 1919 totalrenovert. Fram til dette bygget er ferdig renovert vil
+                ein del av skulen sine aktivitetar føregå på gamle Voss vgs sin avdeling på Vatletun.</p>
+            </article>
+            <article id="kart">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1956.9738208009226!2d6.423489216125091!3d60.62707798213156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463dda970a6e9889%3A0xab94dc0cc9b52a28!2sVoss+Gymnas!5e0!3m2!1sno!2sno!4v1544792758213"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p>Gymnasvegen 5, 5700 Voss</p>
+            </article>
+        </div>
+
+    </main>
+    <footer>
+        <img src="images/vossgymnas.png" alt="Voss Gymnas">
+    </footer>
+</body>
+</html>
